@@ -1,0 +1,44 @@
+Chapter12/spidev-read/spidev_read.c:265:2: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+ printf("max speed: %d Hz (%d KHz)\n", speed, speed/1000);
+ ^
+Chapter12/spidev-read/spidev_read.c:265:2: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+ printf("max speed: %d Hz (%d KHz)\n", speed, speed/1000);
+ ^
+Chapter12/spidev-read/spidev_read.c:61:11: warning: In expression like '*A++' the result of '*' is unused. Did you intend to write '(*A)++;'? [clarifyStatement]
+  *address++;
+          ^
+Chapter12/spidev-test/spidev_test.c:385:2: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+ printf("max speed: %d Hz (%d KHz)\n", speed, speed/1000);
+ ^
+Chapter12/spidev-test/spidev_test.c:385:2: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+ printf("max speed: %d Hz (%d KHz)\n", speed, speed/1000);
+ ^
+Chapter12/spidev-test/spidev_test.c:115:6: style: The scope of the variable 'out_fd' can be reduced. [variableScope]
+ int out_fd;
+     ^
+Chapter17/exec-demo/exec-demo.c:30:7: style: Condition 'wait_for' is always true [knownConditionTrueFalse]
+  if (wait_for) {
+      ^
+Chapter17/exec-demo/exec-demo.c:15:17: note: Assignment 'wait_for=1', assigned value is 1
+ int wait_for = 1;
+                ^
+Chapter17/exec-demo/exec-demo.c:21:11: note: Assuming condition is false
+  if (pid == 0) {
+          ^
+Chapter17/exec-demo/exec-demo.c:30:7: note: Condition 'wait_for' is always true
+  if (wait_for) {
+      ^
+Chapter17/exec-demo/exec-demo.c:19:3: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+  scanf("%s", command_str);
+  ^
+Chapter17/exec-demo/exec-demo.c:13:6: style: The scope of the variable 'pid' can be reduced. [variableScope]
+ int pid;
+     ^
+Chapter18/pagefault-demo/pagefault-demo.c:36:2: error: Memory leak: p [memleak]
+ return 0;
+ ^
+Chapter19/mbx-driver-oops/mbx.c:72:6: style: The scope of the variable 'ret' can be reduced. [variableScope]
+ int ret;
+     ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
